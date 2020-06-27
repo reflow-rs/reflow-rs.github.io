@@ -1,0 +1,39 @@
+{
+  "name": "reflow-rs.github.io",
+  "version": "1.0.0",
+  "description": "www.reflow.rs website",
+  "main": "index.html",
+  "dependencies": {
+    "impress.js": "1.1.0",
+    "live-server": "1.2.1",
+    "pug": "3.0.0",
+    "pug-cli": "1.0.0-alpha6",
+    "sass": "1.26.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "live-server": "npx live-server",
+    "sass-watch": "npx sass --watch css/",
+    "pug-watch": "npx pug --watch index.pug",
+    "dev": "npm run sass-watch & npm run pug-watch & npm run live-server",
+    "build": "npx sass css && npx pug index.pug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reflow-rs/reflow-rs.github.io.git"
+  },
+  "keywords": [
+    "website",
+    "reflow.rs",
+    "reflow"
+  ],
+  "author": "Vladimir Mihajlovic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reflow-rs/reflow-rs.github.io/issues"
+  },
+  "homepage": "https://github.com/reflow-rs/reflow-rs.github.io#readme",
+  "engines": {
+    "node": ">12"
+  }
+}

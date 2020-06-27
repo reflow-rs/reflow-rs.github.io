@@ -1,0 +1,81 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=1920')
+  meta(name='apple-mobile-web-app-capable', content='yes')
+  title Reflow
+  meta(name='description', content='Reflow doo, Belgrade - Website Presentation')
+  meta(name='author', content='Vladimir Mihajlović')
+  link(href='css/reflow.css', rel='stylesheet')
+  link(href='css/border.css', rel='stylesheet')
+  link(rel='shortcut icon', href='favicon.png')
+  link(rel='apple-touch-icon', href='apple-touch-icon.png')
+.fallback-message
+  p
+    | Your browser #[ doesn't support the features required ]
+    |  by impress.js, so you are presented with a simplified 
+    |  version of this presentation.
+  p
+    | For the best experience please use the latest #[Chrome],
+    | #[ Safari ] or #[ Firefox ] browser.
+#impress(
+  data-width='1920', 
+  data-height='1080', 
+  data-perspective='1000', 
+  data-autoplay='300'
+)
+  #welcome.step(data-x='500', data-y='2750', data-rotate='-90', data-rotate-y='180', data-scale='3')
+  #rev.step(data-x='0', data-y='0', data-rotate-y='180', data-scale='2', data-autoplay='0.01')
+  #front.step(data-x='0', data-y='0', data-scale='1', data-autoplay='1')
+    img(src='reflow.svg')
+  #ideas.big.step(data-x='2500', data-y='500', data-z='-7000', 
+            data-rotate='75', data-scale='1', data-autoplay='0.001')
+    p
+      b reflow
+      span.thoughts ideas
+  #design.big.step(data-x='2500', data-y='500', data-z='-9000', 
+            data-rotate='75', data-scale='1', data-autoplay='0.001')
+    p
+      b reflow
+      span.thoughts design
+  #process.big.step(data-x='2500', data-y='500', data-z='-11000', 
+            data-rotate='75', data-scale='1', data-autoplay='0.001')
+    p
+      b reflow
+      span.thoughts process
+  #architecture.big.step(data-x='2500', data-y='500', data-z='-13000', 
+            data-rotate='75', data-scale='1', data-autoplay='0.001')
+    p
+      b reflow
+      span.thoughts architecture
+  #tests.big.step(data-x='2500', data-y='500', data-z='-15000', 
+            data-rotate='75', data-scale='1', data-autoplay='0.001')
+    p
+      b reflow
+      span.thoughts tests
+  #code.big.step(data-x='2500', data-y='500', data-z='-17000', 
+            data-rotate='75', data-scale='1', data-autoplay='0.001')
+    p
+      b reflow
+      span.thoughts code
+  #info.step.last(data-x='2500', data-y='500', data-z='-25000', 
+             data-rotate='180', data-scale='1', data-autoplay='0')
+    .highlight
+      img(src='reflow.svg')
+      p
+        | Reflow doo, Beograd <br/>
+        span.color office@reflow.rs <br/>
+        | (+381) 69 60 30 00 <br/>
+        | Vladimir Mihajlović <br/>
+
+  #blank.step(data-x='2500', data-y='500', data-z='-35000', 
+    data-rotate='180' data-scale='1', data-autoplay='0.01')
+
+  #loop.step(data-x='5000', data-y='27500', data-z='14000', 
+    data-rotate-y='180', data-scale='3', 
+    data-autoplay='0.01')
+
+script(src='js/impress.js')
+script.
+  impress().init();
+
